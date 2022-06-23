@@ -1,0 +1,25 @@
+.container{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 500px;
+    padding: 50px 50px 50px 50px;
+}
+.translate{
+    border: 0;
+    background-color: blue;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15;
+}
+.inner{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 4px;
+}
+.typed{
+    width: 50%;
+}
+.output{
+    width: 50%;
+}
