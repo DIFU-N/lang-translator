@@ -1,49 +1,88 @@
 .minute{
     display: grid;
-    justify-content: center;
-    padding-top: 10%;
+    background-color: aquamarine;
 }
 .container{
-    border: 3px solid black;
-    border-radius: 4px;
-    width: 500px;
-    height: 300px;
-    padding: 50px 50px 50px 50px;
-}
-.translate{
-    border: 0;
-    background-color: blue;
-    width: 100%;
-    border-radius: 3px;
-    padding: 10px 10px 10px 10px;
-    font-size: 15;
+    border: 1px solid black;
+    width: 700px;
+    height: 350px;
+    margin: 6%;
+    margin-top: 5%;
+    margin-left: 20%;
+    padding: 30;
+    background-color: white;
 }
 .inner{
+    border: 1px solid black;
+}
+.txt{
     display: grid;
     grid-template-columns: 50% 50%;
-    justify-content: space-between;
-    border: 0px solid black;
-    border-radius: 4px;
+    justify-content: space-around;
+    height: 250px;
+    border-bottom: 1px solid black;
 }
-textarea{
+.txt .second{
+    border-radius: 0px;
+    border-left: 1px solid black;
+
+}
+.txt textarea{
+    border: none;
     resize: none;
+    outline: none;
 }
-.typed{
-    border: 1px solid black;
-    border-radius: 3px 0px 0px 0px;
-    border-bottom: 0;
+.btn{
+    grid-column: 1 / -1;
+    margin-top: 10;
 }
-.output{
-    border: 1px solid black;
-    border-radius: 0px 3px 0px 0px;
-    border-left: 0;
-    border-bottom: 0;
+.translate{
+    border: none;
+    outline: none;
+    background-color: midnightblue;
+    color: white;
+    padding: 10;
+    width: 100%;
+    font-size: 15px;
+}
+.menu, li, .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .menu{
+    list-style: none;
+    padding: 10px 15px;
+}
+.menu .icons i{
+    width: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.menu .icons{
+    width: 35%;
+}
+.menu .tr select{
+    border: none;
+    outline: none;
+    background: none;
+}
+.menu .tr.from .icons{
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.menu .tr.to .icons{
+    padding-left: 15px;
+    border-left: 2px solid black;
+}
+.menu .exchange{
+    cursor: pointer;
+    font-size: 18px;
+}
+/* .menu{
     border: 1px solid black;
     /* grid-column-start: 1;
     grid-column-end: 3; in this case, -1 = 3 because 3 is the column end*/ 
-    grid-column: 1 / -1; /* -1 will span to the end of column*/
-    /* grid-column: span 2.. this takes up 2 columns */
-    padding: 3px;
-}
+    /*grid-column: 1 / -1; /* -1 will span to the end of column*/
+    /* grid-column: span 2.. this takes up 2 columns }*/
+
