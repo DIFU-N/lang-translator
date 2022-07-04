@@ -10,31 +10,31 @@
     <div class="container">
         <div class="inner">
             <div class="txt">
-                <textarea name="first" class="first" cols="60" rows="5" placeholder="Type Something..."></textarea>
-                <textarea name="second" class="second" cols="60" rows="5" placeholder="Translation" readonly></textarea>
+                <textarea name="first" id="first" cols="60" rows="5" placeholder="Type Something..."></textarea>
+                <textarea name="second" id="second" cols="60" rows="5" placeholder="Translation" readonly></textarea>
             </div>
             <ul class="menu">
                 <li class="tr from">
                     <div class="icons">
-                        <i class="fa fa-volume-up"></i>
-                        <i class="fa fa-copy"></i>
+                        <i id="vol1" class="fa fa-volume-up"></i>
+                        <button id="copy"><i class="fa fa-copy"></i></button>
                     </div>
                     <select>
-                        <option value="en-uk">English</option>
-                        <option value="sw-sa">Swahili</option>
-                        <option value="sv-sw">Svenska</option>
+                        <option value="en-GB">English</option>
+                        <option value="sw-KE">Swahili</option>
+                        <option value="sv-SE">Svenska</option>
                     </select>
                 </li>
                 <li class="exchange"><i class="fa fa-exchange"></i></li>
                 <li class="tr to">
                     <select>
-                        <option value="en-uk">English</option>
-                        <option value="sw-sa">Swahili</option>
-                        <option value="sv-sw">Svenska</option>
+                        <option value="sw-KE">Swahili</option>
+                        <option value="sv-SE">Svenska</option>
+                        <option value="en-GB">English</option>
                     </select>
                     <div class="icons">
-                        <i class="fa fa-copy"></i>
-                        <i class="fa fa-volume-up"></i>
+                        <button id="copy2"><i class="fa fa-copy"></i></button>
+                        <i id="vol"class="btn btn-light fa fa-volume-up"></i>
                     </div>
                 </li>
             </ul>
@@ -45,5 +45,7 @@
             </button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
